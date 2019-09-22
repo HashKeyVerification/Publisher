@@ -5,32 +5,69 @@ import {
   ContractForm,
 } from "@drizzle/react-components";
 
-import logo from "./logo.png";
+import logo from "./Images/key.png";
+
+var publisher = ""
+var version = ""
 
 export default ({ accounts }) => (
   <div className="App">
-    <div>
-      <img src={logo} alt="drizzle-logo" />
-      <h1>Drizzle Examples</h1>
-      <p>Examples of how to get started with Drizzle in various situations.</p>
-    </div>
+    <table>
+      <tr className="NoMargin">
+        <td className="NoMargin">
+          <img className="LeftImage" src={logo} alt="drizzle-logo" height='100'width='100'/>
+        </td>
+        <td className="NoMargin">
+          <div>
+            <h1 className="MainHeader">Hash Key</h1>
+            <p className="HeaderDescription"> An ethereum Dapp that allows software publishers to sign their assemblies via an NFT for latter verification during runime.</p>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    <hr className="LineStyle"/>
 
     <div className="section">
-      <h2>Active Account</h2>
-      <AccountData accountIndex={0} units="ether" precision={3} />
-    </div>
+      <div className="LeftAlignDiv">
+        <h2>Publisher</h2>
+          <div>
+              <input type="text"
+                      className="TextInputStyle"></input>
+          </div>
+        </div>
+      </div>
 
     <div className="section">
-      <h2>SimpleStorage</h2>
-      <p>
-        This shows a simple ContractData component with no arguments, along with
-        a form to set its value.
-      </p>
-      <p>
-        <strong>Stored Value: </strong>
-        <ContractData contract="SimpleStorage" method="storedData" />
-      </p>
-      <ContractForm contract="SimpleStorage" method="set" />
-    </div>
+      <div className="LeftAlignDiv">
+        <h2>Version</h2>
+          <div>
+              <input type="text"
+                    className="TextInputStyle"></input>
+          </div>
+        </div>
+      </div>
+
+      <div className="section">
+        <div className="LeftAlignDiv">
+          <h2>File</h2>
+          <table>
+            <tr className="NoMargin">
+              <td class>
+                  <div>
+                    <p>FileName.exe</p>
+                  </div>
+              </td>
+            </tr>
+          </table>
+
+        </div>
+      </div>
+
+      <div>
+        <button>
+          <p>Ship It</p>
+        </button>
+      </div>
   </div>
 );

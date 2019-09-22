@@ -1,10 +1,132 @@
+*
+{
+  outline:none
+}
+
 .App {
   text-align: center;
   margin: 2rem;
 }
 
 .section {
+  margin: 2px;
+  width: 100%
+}
+
+p {
+  font-size: 100%;
+  font-family: 'Segoe UI';
+  color: whitesmoke;
+  margin: 4px ;
+ }
+
+h1 
+{
+  font-family: 'Segoe UI';
+  color: whitesmoke;
+  margin: 6px ;
+}
+
+h2
+{
+  font-family: 'Segoe UI';
+  color: whitesmoke;
+  margin: 6px;
+}
+
+h3
+{
+  font-family: 'Segoe UI';
+  color: whitesmoke;
+  margin: 6px;
+}
+
+.LeftImage
+{
+  float: left
+}
+
+.HeaderDescription
+{
+  font-size: 100%;
+  font-family: 'Segoe UI';
+  color: whitesmoke;
   text-align: left;
   max-width: 720px;
-  margin: 4rem auto auto;
+  margin-left: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.MainHeader
+{
+  font-family: 'Segoe UI';
+  color: whitesmoke;
+  text-align: left;
+  font-size: 40px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+
+.HeaderBackground
+{
+  background-image: linear-gradient(to right, rgb(36, 36, 36) , rgb(78, 78, 78));
+}
+
+.NoMargin
+{
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.LineStyle
+{
+  border-color: whitesmoke;
+  height: 4;
+}
+
+.LeftAlignDiv
+{
+  display: inline-block; 
+  text-align: left;
+}
+
+.TextInputStyle
+{
+  background: rgb(31, 31, 31);
+  border: 1px solid rgb(104, 104, 104);
+  padding: 10px;
+  color: whitesmoke;
+  min-width: 300px;
+}
+
+input[type=text]:focus { 
+  border: 1px solid white;
+  background: rgb(56, 56, 56);
+}
+
+button
+{
+  background: rgb(202, 159, 58);
+  border: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 15px;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+button:active {
+  transform: translateY(3px);
+}
+
+button:hover {
+  background-color: rgb(110, 87, 33);
 }
